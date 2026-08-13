@@ -12,7 +12,7 @@ public class LoginTest2 {
 	public static void main(String[] args) {
 		WebDriver wd =new ChromeDriver();
 		
-		HomePage homePage = new HomePage(CHROME);
+		HomePage homePage = new HomePage(CHROME, false);
 		
 		LoginPage loginPage=homePage.goToLoginPage();
 		loginPage.doLoginWith("arjun@gmail.com", "Password");

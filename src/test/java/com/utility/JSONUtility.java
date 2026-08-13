@@ -25,7 +25,7 @@ public class JSONUtility {
 	 * real automation framework you might want to handle that more gracefully.
 	 * @return 
 	 */
-	public static String readJSON(Env env) {
+	public static Environment readJSON(Env env) {
 		// 1) Create a Gson object. Gson is a library that converts JSON strings
 		//    into Java objects and vice-versa.
 		Gson gson = new Gson();
@@ -53,7 +53,7 @@ public class JSONUtility {
 		// 5) Retrieve a specific environment by its key ("QA" here). The
 		//    getEnvironments() method returns a Map<String, Environment>.
 		Environment environment = config.getEnvironments().get("QA");
-		return environment.getUrl();
+		return environment;
 	}
 
 }

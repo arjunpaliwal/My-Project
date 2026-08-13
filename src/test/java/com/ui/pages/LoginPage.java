@@ -23,8 +23,7 @@ public final class LoginPage extends BrowserUtility {
 		clickOn(SUBMIT_BUTTON_LOCATOR);
 		MyAccountPage myAccountPage=new MyAccountPage(getDriver());
 		return myAccountPage;
-		
-		
 	}
+	
 
 }

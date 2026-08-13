@@ -10,7 +10,7 @@ public final class MyAccountPage extends BrowserUtility {
 
 	public MyAccountPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+
 	}
 	
 	public String getUserName() {
